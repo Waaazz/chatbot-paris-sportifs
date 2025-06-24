@@ -111,3 +111,35 @@ body {
     border-bottom: 2px solid #334155;
     background-color: #ef4444;
 }
+@media (max-width: 600px) {
+    .option-button {
+        flex: 1 1 100%;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .chat-container {
+        height: 95vh;
+        max-height: 95vh;
+        border-radius: 0;
+    }
+
+    .chat-box {
+        padding: 12px;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    #user-input {
+        font-size: 14px;
+    }
+
+    #send-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+}
