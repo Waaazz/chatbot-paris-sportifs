@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Paris Sportifs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="chat-container">
+    <div class="header">
+        POKO
+    </div>
+    <div class="chat-box" id="chatbox">
+        <div class="message bot-message">👋 Salut ! Voici les questions que je peux t'aider à répondre :</div>
+    </div>
+    <div class="button-container fixed-menu">
+        <button class="option-button" onclick="handleOption('1')">📝 Ouvrir un compte de pari (1)</button>
+        <button class="option-button" onclick="handleOption('2')">🎁 Obtenir un code promo (2)</button>
+        <button class="option-button" onclick="handleOption('3')">📞 Contacter le support (3)</button>
+        <button class="option-button" onclick="handleOption('4')">📚 Visiter notre plate-forme (4)</button>
+        <button class="option-button" disabled style="opacity: 0.4; cursor: not-allowed;">🔒 À venir...</button>
+    </div>
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="choisir une option ici..." onkeydown="if(event.key==='Enter') sendMessage()">
+        <button id="send-btn" onclick="sendMessage()">Envoyer</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
