@@ -37,12 +37,12 @@ body {
     border-radius: 18px;
     max-width: 80%;
     word-wrap: break-word;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.4;
     position: relative;
 }
 .user-message {
-    background-color: #374151;
+    background-color: #03135f;
     align-self: flex-end;
     color: white;
     padding-left: 40px;
@@ -60,17 +60,17 @@ body {
     gap: 12px;
     margin-top: 10px;
     border-top: 1px solid #334155;
-    background-color: #1e293b;
+    background-color: #285caf;
     justify-content: center;
 }
 .option-button {
-    background-color: #facc15;
+    background-color: hsl(251, 80%, 50%);
     color: #1f2937;
     border: none;
     border-radius: 12px;
     padding: 14px 20px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 18px;
     flex: 1 1 calc(48% - 10px);
     box-sizing: border-box;
     text-align: center;
@@ -78,8 +78,33 @@ body {
     font-weight: bold;
 }
 .option-button:hover {
-    background-color: #eab308;
+    background-color: #ea6812;
 }
+
+.button-container.fixed-menu {
+    background-color: #4e770c; /* Couleur du menu principal */
+}
+
+.button-container.submenu {
+    background-color: #3355508c; /* Couleur différente pour les sous-menus dynamiques */
+}
+
+
+
+
+
+
+.option-button.submenu-btn {
+    background-color: #b46f08; /* Violet pour les boutons des sous-menus */
+    color: #fff;
+}
+
+.option-button.submenu-btn:hover {
+    background-color: #818cf8;
+}
+
+
+
 .input-container {
     display: flex;
     border-top: 1px solid #ccc;
@@ -99,7 +124,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-    border-left: 2px solid #555;
+    border-left: 2px solid #bfd00d;
 }
 #send-btn:hover {
      background: #dc2626; 
@@ -115,7 +140,7 @@ body {
 @media (max-width: 600px) {
     .chat-container {
         width: 100%;
-        height: 100vh;
+        height: 95vh;
         border-radius: 0;
         border: none;
     }
@@ -126,18 +151,18 @@ body {
 
     .option-button {
         flex: 1 1 100%;
-        font-size: 13px;
+        font-size: 16px;
         padding: 12px;
     }
 
     #user-input {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px;
     }
 
     #send-btn {
         padding: 10px 15px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .header {
@@ -146,7 +171,7 @@ body {
     }
 
     .message {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px 14px;
     }
 }

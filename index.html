@@ -10,17 +10,17 @@
 <body>
 <div class="chat-container">
     <div class="header">
-        POKO
+        Apollon+ crotte assistant parieur
     </div>
     <div class="chat-box" id="chatbox">
         <div class="message bot-message">👋 Salut ! Voici les questions que je peux t'aider à répondre :</div>
     </div>
     <div class="button-container fixed-menu">
-        <button class="option-button" onclick="handleOption('1')">📝 Ouvrir un compte de pari (1)</button>
-        <button class="option-button" onclick="handleOption('2')">🎁 Obtenir un code promo (2)</button>
-        <button class="option-button" onclick="handleOption('3')">📞 Contacter le support (3)</button>
-        <button class="option-button" onclick="handleOption('4')">📚 Visiter notre plate-forme (4)</button>
-        <button class="option-button" disabled style="opacity: 0.4; cursor: not-allowed;">🔒 À venir...</button>
+        <button class="option-button main-btn" onclick="handleOption('1')">📝 Ouvrir un compte de pari (1)</button>
+        <button class="option-button main-btn" onclick="handleOption('2')">🎁 Obtenir un code promo (2)</button>
+        <button class="option-button main-btn" onclick="handleOption('3')">📞 Contacter le support (3)</button>
+        <button class="option-button main-btn" onclick="handleOption('4')">📚 Visiter notre plate-forme (4)</button>
+        <button class="option-button main-btn" disabled >🔒 À venir...</button>
     </div>
     <div class="input-container">
         <input type="text" id="user-input" placeholder="choisir une option ici..." onkeydown="if(event.key==='Enter') sendMessage()">

@@ -51,10 +51,10 @@ function addMessage(text, sender = 'bot') {
 
 function addButtons(buttons) {
     const container = document.createElement("div");
-    container.className = "button-container";
+    container.className = "button-container submenu"; // Ajoute la classe 'submenu'
     buttons.forEach(btn => {
         const b = document.createElement("button");
-        b.className = "option-button";
+        b.className = "option-button submenu-btn";
         b.textContent = btn.text + (btn.promo && btn.promo !== "-" ? ` (Code Promo: ${btn.promo})` : "");
         if (btn.link === "#") {
             b.disabled = true;
