@@ -29,7 +29,7 @@ const responses = {
     "3": {
         message: "Choisis un moyen de contact :",
         buttons: [
-            { text: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=%2B22655373757&text&type=phone_number&app_absent=0" },
+            { text: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=%2B22655373747&text&type=phone_number&app_absent=0" },
             { text: "Telegram", link: "https://t.me/+2Rcw93FVrrNiNzg0" },
             { text: "Facebook", link: "https://web.facebook.com/1xbetbetbf" },
             { text: "À venir", link: "#", promo: "-" }
